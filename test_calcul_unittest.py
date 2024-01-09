@@ -41,6 +41,7 @@ class TestCalcul(unittest.TestCase):
         # Vérifier si la division par 0 est gérée
         self.assertEqual(resultat,"Division par zéro impossible")
     
+    # Test de division par zéro - exception
     def test_diviser_par_zero(self):
         with self.assertRaises(ZeroDivisionError, msg="Division par zéro impossible"):
                     self.calc.diviser(5, 0)
